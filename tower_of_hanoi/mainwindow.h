@@ -32,8 +32,6 @@ private slots:
 
     void on_sel1_clicked();
 
-    void on_sel1_clicked(bool checked);
-
     void on_push2_clicked();
 
     void on_push3_clicked();
@@ -45,6 +43,8 @@ private slots:
     void on_push1_clicked();
 
     void on_help_clicked();
+
+    void on_rebuld_clicked();
 
 
 

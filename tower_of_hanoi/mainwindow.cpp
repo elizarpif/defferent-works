@@ -12,7 +12,7 @@ MainWindow::MainWindow(QWidget *parent) :
     ui->setupUi(this);
 
     connect(ui->help_action, SIGNAL(triggered()), this, SLOT(on_help_clicked()));
-    connect(ui->help_action, SIGNAL(triggered()), this, SLOT(on_help()));
+    connect(ui->action, SIGNAL(triggered()), this, SLOT(on_rebuld_clicked()));
 
     Constructor();
 
@@ -281,5 +281,16 @@ void MainWindow::on_help_clicked()
     f2->setLayout(lay);
 
     f2->show();
+}
+void MainWindow::on_rebuld_clicked()
+{
+    v1.clear();
+    v2.clear();
+    v3.clear();
+    Constructor();
+    count = 0;
+    cl[0] = false;
+    cl[1] = false;
+    cl[2] = false;
 }
 

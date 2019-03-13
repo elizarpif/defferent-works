@@ -147,7 +147,7 @@
      <x>0</x>
      <y>0</y>
      <width>616</width>
-     <height>18</height>
+     <height>17</height>
     </rect>
    </property>
    <widget class="QMenu" name="menu">
@@ -155,6 +155,7 @@
      <string>Справка</string>
     </property>
     <addaction name="help_action"/>
+    <addaction name="action"/>
    </widget>
    <addaction name="menu"/>
   </widget>
@@ -162,6 +163,11 @@
   <action name="help_action">
    <property name="text">
     <string>Как играть?</string>
+   </property>
+  </action>
+  <action name="action">
+   <property name="text">
+    <string>Запустить сначала</string>
    </property>
   </action>
  </widget>
