@@ -35,14 +35,14 @@ public:
 void Labir::labirint() {
 	int i = 1;
 	for (i; i < count; i+=2) {
-		//ïàðñèì
+		//Ð¿Ð°Ñ€ÑÐ¸Ð¼
 		int border = str[i].length() - 1;
-		for (int j = 1; j < border; j+=2) { //äâà êðàéíèõ - ñòåíêè
+		for (int j = 1; j < border; j+=2) { //Ð´Ð²Ð° ÐºÑ€Ð°Ð¹Ð½Ð¸Ñ… - ÑÑ‚ÐµÐ½ÐºÐ¸
 			str[i][j] = '0';
 
 			int dir = rand() % 2;
 			
-			if ((dir || !(i - 1)) && j + 1 != border) //åñëè ââåðõ íåëüçÿ, òî òîëüêî âïðàâî
+			if ((dir || !(i - 1)) && j + 1 != border) //ÐµÑÐ»Ð¸ Ð²Ð²ÐµÑ€Ñ… Ð¼Ð¾Ð¶Ð½Ð¾ Ð¸ ÑÐ¿Ñ€Ð°Ð²Ð° - Ð½Ðµ Ð³Ñ€Ð°Ð½Ð¸Ñ†Ð°
 			{
 				//cout << "rand = " << dir << endl;
 				str[i][j + 1] = '0';
@@ -58,18 +58,18 @@ void Labir::labirint() {
 
 
 int main() {
-	std::cout << "helllo ";
-	ofstream fout("textlab.txt");
-	if (fout.is_open()) {
-		for (int i = 0; i < 25; i++){
+// 	std::cout << "helllo ";
+// 	ofstream fout("textlab.txt");
+// 	if (fout.is_open()) {
+// 		for (int i = 0; i < 25; i++){
 			
-			for (int j = 0; j < 25;j++)
-				fout << "1";
-			fout << endl;
-		}
+// 			for (int j = 0; j < 25;j++)
+// 				fout << "1";
+// 			fout << endl;
+// 		}
 
-		fout.close();
-	}
+// 		fout.close();
+// 	}
 
 
 	ifstream fin("textlab.txt");
