@@ -49,8 +49,7 @@ void Labir::labirint() {
 			}
 			else if (i-1)
 				str[i - 1][j] = '0';
-			
-				
+						
 		}
 
 	}
@@ -58,19 +57,6 @@ void Labir::labirint() {
 
 
 int main() {
-// 	std::cout << "helllo ";
-// 	ofstream fout("textlab.txt");
-// 	if (fout.is_open()) {
-// 		for (int i = 0; i < 25; i++){
-			
-// 			for (int j = 0; j < 25;j++)
-// 				fout << "1";
-// 			fout << endl;
-// 		}
-
-// 		fout.close();
-// 	}
-
 
 	ifstream fin("textlab.txt");
 	string bf;
